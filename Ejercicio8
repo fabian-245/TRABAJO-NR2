@@ -1,0 +1,17 @@
+using System;
+using UnityEngine;
+// 8. Cofre raro
+public class Ejercicio8 : MonoBehaviour
+{
+    public bool llaveDorada = true, combate = false;
+    public int nivel;
+    void Start()
+    {
+        if ((llaveDorada || nivel > 15) && !combate)
+            Debug.Log("Cofre abierto");
+    }
+    void Update()
+    {
+        
+    }
+}
