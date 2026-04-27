@@ -1,0 +1,16 @@
+using System;
+using UnityEngine;
+// 6. Ataque permitido
+public class Ejercicio6 : MonoBehaviour
+{
+    public bool arma = true, municion = true, aturdido = false;
+    void Start()
+    {
+        if (arma && municion && !aturdido)
+            Debug.Log("Puede atacar");
+    }
+    void Update()
+    {
+        
+    }
+}
