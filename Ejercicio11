@@ -1,0 +1,17 @@
+using System;
+using UnityEngine;
+// 11. Estado visual
+public class Ejercicio11 : MonoBehaviour
+{
+    public int vida;
+    void Start()
+    {
+        string estado = vida < 20 ? "Crítico" :
+                         vida <= 50 ? "Herido" : "Estable";
+        Debug.Log(estado);
+    }
+    void Update()
+    {
+        
+    }
+}
