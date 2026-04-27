@@ -1,0 +1,17 @@
+using System;
+using UnityEngine;
+// 7. Curación válida
+public class Ejercicio7 : MonoBehaviour
+{
+    public bool pocion = false, zonaSegura = true;
+    public int vida;
+    void Start()
+    {
+        if ((pocion || zonaSegura) && vida > 0)
+            Debug.Log("Curación disponible");
+    }
+    void Update()
+    {
+        
+    }
+}
