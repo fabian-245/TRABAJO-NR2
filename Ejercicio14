@@ -1,0 +1,18 @@
+using System;
+using UnityEngine;
+// 14. Multiplicador de daño
+public class Ejercicio14 : MonoBehaviour
+{
+    public float daño = 100;
+    void Start()
+    {
+        bool critico = true, vulnerable = false;
+        float dañoFinal = (critico && vulnerable) ? daño * 2 :
+                          critico ? daño * 1.5f : daño;
+        Debug.Log(dañoFinal);
+    }
+    void Update()
+    {
+        
+    }
+}
