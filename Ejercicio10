@@ -1,0 +1,21 @@
+using System;
+using UnityEngine;
+// 10. IA enemiga
+public class Ejercicio10 : MonoBehaviour
+{
+    public bool veJugador = true;
+    public bool cerca = false;
+    void Start()
+    {
+        if (veJugador && cerca)
+            Debug.Log("Atacar");
+        else if (veJugador)
+            Debug.Log("Perseguir");
+        else
+            Debug.Log("Patrullar");
+    }
+    void Update()
+    {
+        
+    }
+}
