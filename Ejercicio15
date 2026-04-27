@@ -1,0 +1,19 @@
+using System;
+using UnityEngine;
+// 15. Estado enemigo
+public class Ejercicio15 : MonoBehaviour
+{
+    public bool energia = true;
+    public bool veJugador = true;
+    public bool cerca = true;
+    void Start()
+    {
+        string accion = (veJugador && cerca && energia) ? "Atacar" :
+                        (veJugador && energia) ? "Perseguir" : "Esperar";
+        Debug.Log(accion);
+    }
+    void Update()
+    {
+        
+    }
+}
