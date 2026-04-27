@@ -1,0 +1,19 @@
+using System;
+using UnityEngine;
+// 12. Acceso zona especial
+public class Ejercicio12 : MonoBehaviour
+{
+    public bool vip = true;
+    public int nivel;
+    public bool combate = false;
+    void Start()
+    {
+        string acceso = ((nivel >= 10 || vip) && !combate) ?
+                         "Acceso permitido" : "Acceso denegado";
+        Debug.Log(acceso);
+    }
+    void Update()
+    {
+        
+    }
+}
