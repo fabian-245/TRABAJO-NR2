@@ -1,0 +1,22 @@
+using System;
+using UnityEngine;
+// 3. Acceso a mazmorra
+public class Ejercicio3 : MonoBehaviour
+{
+    public int nivel = 8;
+    void Start()
+    {
+        if (nivel >= 10)
+            Debug.Log("Acceso permitido");
+        else
+        {
+            Debug.Log("Acceso denegado");
+            Debug.Log("Necesita seguir entrenando");
+        }
+
+    }
+    void Update()
+    {
+        
+    }
+}
