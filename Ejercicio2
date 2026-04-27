@@ -1,0 +1,22 @@
+using System;
+using UnityEngine;
+// 2. Sistema de rango
+public class Ejercicio2 : MonoBehaviour
+{
+    public int puntaje = 350;
+    void Start()
+    {
+        if (puntaje < 100)
+            Debug.Log("Novato");
+        else if (puntaje < 300)
+            Debug.Log("Intermedio");
+        else if (puntaje < 600)
+            Debug.Log("Avanzado");
+        else
+            Debug.Log("Elite");
+    }
+    void Update()
+    {
+        
+    }
+}
