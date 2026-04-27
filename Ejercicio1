@@ -1,0 +1,22 @@
+using System;
+using UnityEngine;
+// 1. Estado de salud
+public class Ejercicio1 : MonoBehaviour
+{
+    public int vida = 100;
+    void Start()
+    {
+
+        //30
+        if (vida <= 0)
+            Debug.Log("Muerto");
+        else if (vida < 30)
+            Debug.Log("Herido");
+        else 
+            Debug.Log("Saludable");
+    }
+    void Update()
+    {
+        
+    }
+}
