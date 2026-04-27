@@ -1,0 +1,22 @@
+using System;
+using UnityEngine;
+// 5. Clima
+public class Ejercicio5 : MonoBehaviour
+{
+    public int temp = 10;
+    void Start()
+    {
+        if (temp <= 0)
+            Debug.Log("Nieve");
+        else if (temp < 10)
+            Debug.Log("Lluvia");
+        else if (temp < 20)
+            Debug.Log("Nublado");
+        else
+            Debug.Log("Soleado");
+    }
+    void Update()
+    {
+        
+    }
+}
