@@ -1,0 +1,23 @@
+using System;
+using UnityEngine;
+// 4. Velocidad
+public class Ejercicio4 : MonoBehaviour
+{
+    public int velocidad = 5;
+    void Start()
+    {
+        if (velocidad == 0)
+            Debug.Log("Detenido");
+        else if (velocidad < 5)
+            Debug.Log("Caminando");
+        else if (velocidad < 10)
+            Debug.Log("Corriendo");
+        else
+            Debug.Log("Sprint");
+
+    }
+void Update()
+    {
+        
+    }
+}
